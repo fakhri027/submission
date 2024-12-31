@@ -197,7 +197,7 @@ with col2:
     st.metric("Average Frequency", value=avg_frequency)
 
 with col3:
-    avg_frequency = format_currency(rfm_df.monetary.mean(), "RBL cd", locale='es_CO') 
+    avg_frequency = format_currency(rfm_df.monetary.mean(), "RBL ", locale='es_CO') 
     st.metric("Average Monetary", value=avg_frequency)
 
 fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(35, 15))
